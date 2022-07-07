@@ -1,0 +1,55 @@
+{
+	"name": "Vallas",
+	"plugin-id": "Sprite",
+	"sid": 239067769111623,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 452413349988930
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 10,
+						"height": 64,
+						"originX": 0.6,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2087273,
+						"collisionPoly": {
+							"points": [
+								0.2,
+								0.25,
+								0.8,
+								0.25,
+								0.8,
+								0.75,
+								0.2,
+								0.75
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 816043516397673,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

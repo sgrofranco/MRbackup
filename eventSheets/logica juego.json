@@ -1,0 +1,2204 @@
+{
+	"name": "Logica Juego",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Hora",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 504604656082377
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Dia/noche",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 365910531672682
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Sol",
+							"sid": 776624793578278,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoSol",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "pin-to-object-properties",
+							"objectClass": "Luna",
+							"sid": 163917196425301,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "ObjetoLuna",
+								"x": true,
+								"y": true,
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ObjetoLuna",
+							"sid": 907514175272911,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "11520 + 500",
+								"end-y": "-750",
+								"time": "8",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 638032881540114
+				},
+				{
+					"functionName": "Anochecer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "noche",
+							"sid": 320445884963527,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "50",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Sol",
+							"sid": 390204472965742,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Luna",
+							"sid": 105395931141764,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "25",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ObjetoLuna",
+							"sid": 875677651579264,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "11520 + 500",
+								"end-y": "-750",
+								"time": "15",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 564216140545961
+				},
+				{
+					"functionName": "Amanecer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "tween-one-property",
+							"objectClass": "noche",
+							"sid": 121044158540875,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Sol",
+							"sid": 315381676799442,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "50",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Luna",
+							"sid": 842070808477652,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "2",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ObjetoSol",
+							"sid": 433333539244555,
+							"behaviorType": "Tweeninterpolación",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "position",
+								"end-x": "11520+500",
+								"end-y": "-500",
+								"time": "16",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 758942740664339
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 343156335947332,
+							"parameters": {
+								"interval-seconds": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 649872519908319,
+							"parameters": {
+								"variable": "Hora",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 963396763350537
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 438422562550776,
+							"parameters": {
+								"variable": "Hora",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ObjetoSol",
+							"sid": 822166983730155,
+							"parameters": {
+								"x": "-750",
+								"y": "-750"
+							}
+						},
+						{
+							"callFunction": "Amanecer",
+							"sid": 294232427517265
+						}
+					],
+					"sid": 769538828800868
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 812261214892595,
+							"parameters": {
+								"variable": "Hora",
+								"comparison": 0,
+								"value": "17"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "ObjetoLuna",
+							"sid": 205854308918106,
+							"parameters": {
+								"x": "-750",
+								"y": "-750"
+							}
+						},
+						{
+							"callFunction": "Anochecer",
+							"sid": 536408942239713
+						}
+					],
+					"sid": 340523681678852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 214008576007350,
+							"parameters": {
+								"variable": "Hora",
+								"comparison": 0,
+								"value": "24"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 423776606203219,
+							"parameters": {
+								"variable": "Hora",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 192505243202618
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 906294547334135
+						}
+					],
+					"actions": [
+						{
+							"id": "set-text",
+							"objectClass": "Horario",
+							"sid": 508920178890930,
+							"parameters": {
+								"text": "Hora"
+							}
+						}
+					],
+					"sid": 479798159765866
+				}
+			],
+			"sid": 828146271666836
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "DragScreen",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "comment",
+					"text": "Set the position to the center of the viewport when touching the screen. So the screen instantly moves, even if the Camera was moved to the outermost corner of the layout."
+				},
+				{
+					"eventType": "comment",
+					"text": "The Pinpoint Object is needed for the orientation of the movement. It is pinned to the Camera, which remains in the center of the screen, so the distance between your finger and the Pinpoint stays the same while moving."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-any-touch-start",
+							"objectClass": "Touch",
+							"sid": 362990866988258
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "obj_camera",
+							"sid": 205325579212898,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "obj_pinpoint",
+							"sid": 907326656497725,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "obj_pinpoint",
+							"sid": 992135778659587,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "obj_camera",
+								"mode": "position-only"
+							}
+						}
+					],
+					"sid": 138467667436365
+				},
+				{
+					"eventType": "comment",
+					"text": "While you swipe over the screen the Bullet Speed of the Camera is determined from the distance between your finger/cursor and the Pinpoint (two times the distance in this case), but it can be 2000 at maximum. You can play around with these parameters and the acceleration from the Cameras bullet behavior (which needs to be negativ) to find out your perfect setup."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 588766320075509,
+							"parameters": {
+								"touch-index": "0",
+								"comparison": 5,
+								"speed": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "obj_camera",
+							"sid": 920284648395417,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "min(2000, distance(Touch.X, Touch.Y, obj_pinpoint.X, obj_pinpoint.Y)*2)"
+							}
+						},
+						{
+							"id": "set-angle-of-motion",
+							"objectClass": "obj_camera",
+							"sid": 652587110724029,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"angle": "angle(Touch.X, Touch.Y, obj_pinpoint.X, obj_pinpoint.Y)"
+							}
+						}
+					],
+					"sid": 558787502915858
+				},
+				{
+					"eventType": "comment",
+					"text": "When your finger is to slow or it has stopped, the Camera instantly stop as well and the Pinpoint is set to the position of your finger/cursor."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-touch-speed",
+							"objectClass": "Touch",
+							"sid": 932045653931223,
+							"parameters": {
+								"touch-index": "0",
+								"comparison": 2,
+								"speed": "10"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-speed",
+							"objectClass": "obj_camera",
+							"sid": 599799269090220,
+							"behaviorType": "Bullet",
+							"parameters": {
+								"speed": "0"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "obj_camera",
+							"sid": 890154379300642,
+							"parameters": {
+								"x": "scrollx",
+								"y": "scrolly"
+							}
+						},
+						{
+							"id": "unpin",
+							"objectClass": "obj_pinpoint",
+							"sid": 355122150227644,
+							"behaviorType": "Pin"
+						},
+						{
+							"id": "set-position",
+							"objectClass": "obj_pinpoint",
+							"sid": 242485074631863,
+							"parameters": {
+								"x": "Touch.X",
+								"y": "Touch.Y"
+							}
+						},
+						{
+							"id": "pin-to-object",
+							"objectClass": "obj_pinpoint",
+							"sid": 287732176772145,
+							"behaviorType": "Pin",
+							"parameters": {
+								"pin-to": "obj_camera",
+								"mode": "position-only"
+							}
+						}
+					],
+					"sid": 694725374497414
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 924440642748354
+						}
+					],
+					"actions": [
+						{
+							"id": "set-collisions-enabled",
+							"objectClass": "obj_camera",
+							"sid": 708842076817933,
+							"parameters": {
+								"collisions": "disabled"
+							}
+						}
+					],
+					"sid": 612365165575496
+				}
+			],
+			"sid": 541682589299693
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Zoom",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "Zoom",
+					"type": "number",
+					"initialValue": "1",
+					"comment": "",
+					"isStatic": true,
+					"isConstant": false,
+					"sid": 816701188062500
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-mouse-wheel",
+							"objectClass": "Mouse",
+							"sid": 380557832380690,
+							"parameters": {
+								"direction": "up"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 968491546940442,
+							"parameters": {
+								"variable": "Zoom",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 354062357612259
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-mouse-wheel",
+							"objectClass": "Mouse",
+							"sid": 704875170156898,
+							"parameters": {
+								"direction": "down"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 122999368953736,
+							"parameters": {
+								"variable": "Zoom",
+								"value": "0.1"
+							}
+						}
+					],
+					"sid": 227099951118139
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 540289292922077
+						}
+					],
+					"actions": [
+						{
+							"id": "set-layout-scale",
+							"objectClass": "System",
+							"sid": 967305259744308,
+							"parameters": {
+								"scale": "lerp(LayoutScale,Zoom,0.05)"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 460271589300704,
+							"parameters": {
+								"variable": "Zoom",
+								"value": "clamp(Zoom,0.25,1.5)"
+							}
+						}
+					],
+					"sid": 589324668934917
+				}
+			],
+			"sid": 933488167637588
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Poblacion",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "aldeano",
+							"sid": 897103829078576,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "aldeano",
+							"sid": 781639509786612,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"sid": 669826468252348
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-failed-to-find-path",
+							"objectClass": "aldeano",
+							"sid": 180827852826822,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-size",
+							"objectClass": "aldeano",
+							"sid": 168856253384445,
+							"parameters": {
+								"width": "200",
+								"height": "200"
+							}
+						}
+					],
+					"sid": 114025161431669
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "aldeano",
+							"sid": 471423160634534,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "aldeano",
+							"sid": 632836717738889,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 722085730774619,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 590347879699690,
+									"parameters": {
+										"object": "PuntosDeRefencia"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "aldeano",
+									"sid": 382991591874722,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefencia.x",
+										"y": "PuntosDeRefencia.y"
+									}
+								}
+							],
+							"sid": 587101250712052
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "aldeano",
+							"sid": 400979948614264
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "aldeano",
+							"sid": 169905142614859,
+							"behaviorType": "Buscarutas",
+							"parameters": {
+								"speed": "50 + random(45)"
+							}
+						}
+					],
+					"sid": 872339826761710,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 520366172434535,
+									"parameters": {
+										"object": "PuntosDeRefencia"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "aldeano",
+									"sid": 152336220718744,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefencia.x",
+										"y": "PuntosDeRefencia.y"
+									}
+								}
+							],
+							"sid": 521432023957315
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-along-path",
+							"objectClass": "aldeano",
+							"sid": 600892091544051,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "aldeano",
+							"sid": 485477013930993,
+							"parameters": {
+								"animation": "\"caminar\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 842404096054631
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving-along-path",
+							"objectClass": "aldeano",
+							"sid": 430030529597728,
+							"behaviorType": "Buscarutas",
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "aldeano",
+							"sid": 275903606411101,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 726376953056019
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-speed",
+							"objectClass": "aldeano",
+							"sid": 439204910581017,
+							"behaviorType": "Buscarutas",
+							"parameters": {
+								"comparison": 3,
+								"speed": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "aldeano",
+							"sid": 357056947846567,
+							"parameters": {
+								"animation": "\"idle\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 128187426298984
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Alineacion",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "aldeano",
+									"sid": 584868720312954
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "aldeano",
+									"sid": 605315590258482,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"value": "choose(0,1,2,3,4,5,6,7,8,9,10)"
+									}
+								}
+							],
+							"sid": 103784233921542
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 107211593084079,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 320320509138796
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 400426822612628,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "1"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 947427394808231,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "2"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 901664257397380,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "3"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 785064189189376,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "5"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 597407798644609,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "4"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 776786319059626,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "6"
+									}
+								},
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 259295502241585,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "7"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "aldeano",
+									"sid": 610864509000586,
+									"parameters": {
+										"color": "rgbEx(255, 0, 0)"
+									}
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "aldeano",
+									"sid": 178497614742616,
+									"parameters": {
+										"object": "worker",
+										"layer": "\"Tierra\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "aldeano",
+									"sid": 252170901133793
+								}
+							],
+							"sid": 677623133003425,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 539262001760930,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "8"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "aldeano",
+									"sid": 304262725754604,
+									"parameters": {
+										"color": "rgbEx(0, 255, 0)"
+									}
+								}
+							],
+							"sid": 493403486616918
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 520894926446857,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "9"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "aldeano",
+									"sid": 842511218003174,
+									"parameters": {
+										"color": "rgbEx(0, 0, 255)"
+									}
+								}
+							],
+							"sid": 604526319974025
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "aldeano",
+									"sid": 901529061869534,
+									"parameters": {
+										"instance-variable": "Faccion",
+										"comparison": 0,
+										"value": "10"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-default-color",
+									"objectClass": "aldeano",
+									"sid": 508706419615258,
+									"parameters": {
+										"color": "rgbEx(255, 255, 0)"
+									}
+								}
+							],
+							"sid": 378856146755633
+						}
+					],
+					"sid": 572641306190088
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Worker",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-path-found",
+									"objectClass": "worker",
+									"sid": 276699192917777,
+									"behaviorType": "Buscarutas"
+								}
+							],
+							"actions": [
+								{
+									"id": "move-along-path",
+									"objectClass": "worker",
+									"sid": 861095948336932,
+									"behaviorType": "Buscarutas"
+								}
+							],
+							"sid": 620293650964507
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-failed-to-find-path",
+									"objectClass": "worker",
+									"sid": 605878869027352,
+									"behaviorType": "Buscarutas"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-size",
+									"objectClass": "worker",
+									"sid": 797360294690194,
+									"parameters": {
+										"width": "200",
+										"height": "200"
+									}
+								}
+							],
+							"sid": 244164774351117
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-arrived",
+									"objectClass": "worker",
+									"sid": 909476762675523,
+									"behaviorType": "Buscarutas"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "worker",
+									"sid": 139413488684640,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 956546099556624,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 889669978360829,
+											"parameters": {
+												"object": "PuntosDeRefenciaWorker"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "find-path",
+											"objectClass": "worker",
+											"sid": 256666150200009,
+											"behaviorType": "Buscarutas",
+											"parameters": {
+												"x": "PuntosDeRefenciaWorker.x",
+												"y": "PuntosDeRefenciaWorker.y"
+											}
+										}
+									],
+									"sid": 174612415101972
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "worker",
+									"sid": 204600539623677
+								}
+							],
+							"actions": [
+								{
+									"id": "set-speed",
+									"objectClass": "worker",
+									"sid": 631884443008113,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"speed": "50+random(45)"
+									}
+								}
+							],
+							"sid": 666754806906514,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-random-instance",
+											"objectClass": "System",
+											"sid": 523919281119168,
+											"parameters": {
+												"object": "PuntosDeRefenciaWorker"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "find-path",
+											"objectClass": "worker",
+											"sid": 440202672473917,
+											"behaviorType": "Buscarutas",
+											"parameters": {
+												"x": "PuntosDeRefenciaWorker.x",
+												"y": "PuntosDeRefenciaWorker.y"
+											}
+										}
+									],
+									"sid": 281472263842454
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving-along-path",
+									"objectClass": "worker",
+									"sid": 342641306139299,
+									"behaviorType": "Buscarutas"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "worker",
+									"sid": 115198899870030,
+									"parameters": {
+										"animation": "\"caminar\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 722227103555546
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-speed",
+									"objectClass": "worker",
+									"sid": 627185658984666,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"comparison": 0,
+										"speed": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "worker",
+									"sid": 562573808339537,
+									"parameters": {
+										"animation": "\"idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 152718207460584
+						}
+					],
+					"sid": 845075169488585
+				}
+			],
+			"sid": 930586386920194
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Arboles",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "CrearArbol",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 431993732495086,
+							"parameters": {
+								"object-to-create": "arbol",
+								"layer": "\"Arboles\"",
+								"x": "random(11520)",
+								"y": "random(7680)",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 428292602896368
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "arbol",
+							"sid": 160915465627744
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation-frame",
+							"objectClass": "arbol",
+							"sid": 526823273588964,
+							"parameters": {
+								"frame-number": "random(10)"
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "arbol",
+							"sid": 536777065722966,
+							"parameters": {
+								"angle": "random(90)"
+							}
+						},
+						{
+							"id": "set-size",
+							"objectClass": "arbol",
+							"sid": 734256020737688,
+							"parameters": {
+								"width": "arbol.Width+random(30)",
+								"height": "arbol.Height+random(30)"
+							}
+						}
+					],
+					"sid": 391904750316030,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 280407045706368,
+									"parameters": {
+										"object": "Edificios"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 533784188600795,
+									"parameters": {
+										"object": "granja"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 410228493128704,
+									"parameters": {
+										"object": "arbol"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 333490513008345,
+									"parameters": {
+										"object": "Castillo"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 283928902748425,
+									"parameters": {
+										"object": "AreaCamino"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 223223693363227,
+									"parameters": {
+										"object": "AreaVacia"
+									}
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "arbol",
+									"sid": 637770938241769,
+									"parameters": {
+										"object": "Vallas"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "arbol",
+									"sid": 338854160152242
+								}
+							],
+							"sid": 617217805381601,
+							"isOrBlock": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "arbol",
+							"sid": 773931458238316,
+							"parameters": {
+								"object": "casa"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "arbol",
+							"sid": 486190463459861
+						}
+					],
+					"sid": 696376987867990
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "arbol",
+							"sid": 348235167852427,
+							"parameters": {
+								"object": "granja"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "arbol",
+							"sid": 911533873615072
+						}
+					],
+					"sid": 524791463231040
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "arbol",
+							"sid": 371666768316703,
+							"parameters": {
+								"object": "aldeano"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "arbol",
+							"sid": 769840646592737,
+							"parameters": {
+								"opacity": "35"
+							}
+						}
+					],
+					"sid": 354162738232331
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "arbol",
+							"sid": 777455395108359,
+							"parameters": {
+								"object": "aldeano"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-opacity",
+							"objectClass": "arbol",
+							"sid": 369816540953043,
+							"parameters": {
+								"opacity": "100"
+							}
+						}
+					],
+					"sid": 499373595856899
+				}
+			],
+			"sid": 443457607211214
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "casa",
+					"sid": 663450636637364
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "casa",
+					"sid": 996583523460645,
+					"parameters": {
+						"frame-number": "round(random(25))"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "casa",
+					"sid": 624437116851420,
+					"parameters": {
+						"width": "casa.Width+random(-45.25)",
+						"height": "casa.Height+random(-45.25)"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "casa",
+					"sid": 694191155175570,
+					"parameters": {
+						"x": "casa.X+random(-15,15)",
+						"y": "casa.y+random(-15,15)"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "casa",
+					"sid": 729695178960939,
+					"parameters": {
+						"angle": "casa.Angle+random(-10,10)"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "casa",
+					"sid": 314721807324061,
+					"parameters": {
+						"object": "aldeano",
+						"layer": "\"Tierra\"",
+						"image-point": "1",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 293292326857146
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "granja",
+					"sid": 213183828115663
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "granja",
+					"sid": 102919430543516,
+					"parameters": {
+						"frame-number": "random(9)"
+					}
+				},
+				{
+					"id": "set-size",
+					"objectClass": "granja",
+					"sid": 258614966930924,
+					"parameters": {
+						"width": "granja.Width+random(-15,35)",
+						"height": "granja.Height+random(-15,35)"
+					}
+				},
+				{
+					"id": "set-angle",
+					"objectClass": "granja",
+					"sid": 820070622452518,
+					"parameters": {
+						"angle": "granja.Angle+random(10)"
+					}
+				}
+			],
+			"sid": 795946295562110
+		},
+		{
+			"functionName": "CreaCasa",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "AreaCamino",
+					"sid": 388738285697496,
+					"parameters": {
+						"object": "casa",
+						"layer": "\"Tierra\"",
+						"image-point": "random(6)",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 341452949358533
+		},
+		{
+			"functionName": "CrearCasaNoble",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 531550373425633,
+					"parameters": {
+						"object-to-create": "CasaNoble",
+						"layer": "\"Tierra\"",
+						"x": "4000+random(4000)",
+						"y": "3000+random(2500)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 721476826526604
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 438387845265855
+				}
+			],
+			"actions": [],
+			"sid": 996320471862380,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 722046393191442,
+							"parameters": {
+								"count": "5500"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "CrearArbol",
+							"sid": 144331873764382
+						}
+					],
+					"sid": 692604845956460
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "MuroCuadrado",
+					"sid": 837932659272613,
+					"parameters": {
+						"object": "aldeano"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "MuroCuadrado",
+					"sid": 366395928217875,
+					"parameters": {
+						"opacity": "35"
+					}
+				}
+			],
+			"sid": 546761519861725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "MuroCuadrado",
+					"sid": 412890900456323,
+					"parameters": {
+						"object": "aldeano"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "MuroCuadrado",
+					"sid": 507362722053825,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 456883332322205
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "CasaNoble",
+					"sid": 570931540922408
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "CasaNoble",
+					"sid": 642218868348756,
+					"parameters": {
+						"frame-number": "random(3)"
+					}
+				}
+			],
+			"sid": 222322344403274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 859704902029154
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "luzsita",
+					"sid": 737933416732269,
+					"behaviorType": "Tweeninterpolación",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "150",
+						"end-y": "150",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 104643874006266
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "luzsita",
+					"sid": 130029552106995,
+					"behaviorType": "Tweeninterpolación",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "200",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 637166625382783
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 697718007821091,
+					"parameters": {
+						"interval-seconds": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-two-properties",
+					"objectClass": "luzsita",
+					"sid": 685050188127964,
+					"behaviorType": "Tweeninterpolación",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "150",
+						"end-y": "150",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "wait-for-previous-actions",
+					"objectClass": "System",
+					"sid": 918264325493557
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "luzsita",
+					"sid": 542594173379650,
+					"behaviorType": "Tweeninterpolación",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "size",
+						"end-x": "200",
+						"end-y": "200",
+						"time": "1",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 269432394616555
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Animales",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Vaca",
+							"sid": 614129652766479,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Vaca",
+							"sid": 340398920814565,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"sid": 205858542869852
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Vaca",
+							"sid": 759063004471765,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Vaca",
+							"sid": 487381557610554,
+							"parameters": {
+								"animation": "\"Pastorear\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 612555444228655,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 195506139291672,
+									"parameters": {
+										"object": "PuntosDeRefenciaVaca"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 478574259142608,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Vaca",
+									"sid": 601406724886188,
+									"parameters": {
+										"animation": "\"Caminar\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Vaca",
+									"sid": 891239793969621,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefenciaVaca.x",
+										"y": "PuntosDeRefenciaVaca.y"
+									}
+								}
+							],
+							"sid": 147225319013512
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Vaca",
+							"sid": 509185211857327
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Vaca",
+							"sid": 476219043862467,
+							"behaviorType": "Buscarutas",
+							"parameters": {
+								"speed": "50+random(5)"
+							}
+						}
+					],
+					"sid": 596916821252887,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 273192080062095,
+									"parameters": {
+										"object": "PuntosDeRefenciaVaca"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Vaca",
+									"sid": 884847063970516,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefenciaVaca.x",
+										"y": "PuntosDeRefenciaVaca.y"
+									}
+								}
+							],
+							"sid": 804991606145191
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-path-found",
+							"objectClass": "Cerdo",
+							"sid": 122241980735523,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "move-along-path",
+							"objectClass": "Cerdo",
+							"sid": 416357811970527,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"sid": 796994143294973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-arrived",
+							"objectClass": "Cerdo",
+							"sid": 356058178573565,
+							"behaviorType": "Buscarutas"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "Cerdo",
+							"sid": 679855823945354,
+							"parameters": {
+								"animation": "\"Comer\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 867489568043362,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 409726083172403,
+									"parameters": {
+										"object": "PuntosDeRefenciaCerdo"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 670568271953257,
+									"parameters": {
+										"seconds": "3"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "Cerdo",
+									"sid": 231545159330876,
+									"parameters": {
+										"animation": "\"Caminar\"",
+										"from": "beginning"
+									}
+								},
+								{
+									"id": "find-path",
+									"objectClass": "Cerdo",
+									"sid": 295348500708275,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefenciaCerdo.x",
+										"y": "PuntosDeRefenciaCerdo.y"
+									}
+								}
+							],
+							"sid": 250216422167989
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "Cerdo",
+							"sid": 768359111994473
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Cerdo",
+							"sid": 469398474261672,
+							"behaviorType": "Buscarutas",
+							"parameters": {
+								"speed": "50+random(5)"
+							}
+						}
+					],
+					"sid": 557429239247787,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-random-instance",
+									"objectClass": "System",
+									"sid": 716132671308553,
+									"parameters": {
+										"object": "PuntosDeRefenciaCerdo"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "find-path",
+									"objectClass": "Cerdo",
+									"sid": 740369048830531,
+									"behaviorType": "Buscarutas",
+									"parameters": {
+										"x": "PuntosDeRefenciaCerdo.x",
+										"y": "PuntosDeRefenciaCerdo.y"
+									}
+								}
+							],
+							"sid": 186290849368786
+						}
+					]
+				}
+			],
+			"sid": 736688744272505
+		}
+	],
+	"sid": 923840968589711
+}

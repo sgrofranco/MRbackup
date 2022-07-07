@@ -1,0 +1,842 @@
+{
+	"name": "casa",
+	"plugin-id": "Sprite",
+	"sid": 129559048988020,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "shadowcaster",
+			"name": "ProyectorDeSombras",
+			"sid": 841622158705890
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 345971810084928
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7702108,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8985892,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5263969,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7269769,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 925845,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1015071,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3107976,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3976890,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6485540,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7776056,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3732875,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8497881,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8582400,
+						"collisionPoly": {
+							"points": [
+								0.9808743169398907,
+								0.9377510040160643,
+								0.02732240437158473,
+								0.9437751004016064,
+								0.024590163934426257,
+								0.014056224899598568,
+								0.9808743169398907,
+								0.012048192771084487
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3926997,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6123110,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8643763,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8861427,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2469243,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1252631,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3755787,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7470340,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5671390,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9055815,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7406134,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2730905,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 122,
+						"height": 166,
+						"originX": 0.5,
+						"originY": 0.4457831325301205,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5680992,
+						"collisionPoly": {
+							"points": [
+								0.01912568306010929,
+								0.06224899598393574,
+								0.9726775956284153,
+								0.05622489959839361,
+								0.9754098360655737,
+								0.9859437751004014,
+								0.019125683060109294,
+								0.9879518072289155
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Puerta",
+								"x": 0.5163934426229508,
+								"y": 1.1927710843373494
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 194776721328291,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}
